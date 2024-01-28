@@ -15,7 +15,7 @@ const Zone1Card = () => {
   const [notification, setNotification] = useState("loading");
 
   useEffect(() => {
-    const eventSource = new EventSource("http://localhost:5000/flame-sensor");
+    const eventSource = new EventSource("http://localhost:5000/flame-info");
 
     eventSource.onmessage = (event) => {
       try {
