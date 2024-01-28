@@ -6,7 +6,7 @@ const DeviceInfo = () => {
   const [deviceInfoData, setDeviceInfoData] = useState(null);
 
   useEffect(() => {
-    const eventSource = new EventSource("http://localhost:5000/device-info");
+    const eventSource = new EventSource("https://api-fixiror.vercel.app/device-info");
 
     eventSource.onmessage = (event) => {
       try {

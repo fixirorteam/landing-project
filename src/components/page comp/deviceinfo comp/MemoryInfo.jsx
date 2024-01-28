@@ -5,7 +5,7 @@ const MemoryInfo = () => {
   const [MemoryInfo, setMemoryInfoData] = useState(null);
 
   useEffect(() => {
-    const eventSource = new EventSource("http://localhost:5000/memory-info");
+    const eventSource = new EventSource("https://api-fixiror.vercel.app/memory-info");
 
     eventSource.onmessage = (event) => {
       try {
