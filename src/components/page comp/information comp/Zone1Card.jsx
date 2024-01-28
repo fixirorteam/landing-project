@@ -15,7 +15,7 @@ const Zone1Card = () => {
   const [notification, setNotification] = useState("loading");
 
   useEffect(() => {
-    const eventSource = new EventSource("https://api-fixiror.vercel.app/flame-info");
+    const eventSource = new EventSource("http://localhost:5000/flame-info");
 
     eventSource.onmessage = (event) => {
       try {
