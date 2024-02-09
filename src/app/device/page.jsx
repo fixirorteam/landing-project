@@ -1,13 +1,20 @@
 import DeviceInfo from '@/components/page comp/deviceinfo comp/DeviceInfo'
+import ModalForm from '@/components/page comp/deviceinfo comp/ModalForm'
 import React from 'react'
 
 const page = () => {
   return (
     <>
         <section className="max-[1024px]:hidden">
-            <div className="w-[950px] h-[800px] bg-white mt-[2rem] rounded-3xl shadow-xl shadow-slate-500">
-                <div className="flex mt-[2rem] ml-[2rem]">
+            <div className="flex flex-col">
+                <div className="">
                     <div className="">
+                        <ModalForm/>
+                    </div>
+                </div>
+                <div className="flex w-[900px] h-[800px] bg-white mt-[2rem] rounded-3xl shadow-xl shadow-slate-500">
+                    
+                    <div className="mt-[2rem] ml-[2rem]">
                         <DeviceInfo/>
                     </div>
                 </div>
